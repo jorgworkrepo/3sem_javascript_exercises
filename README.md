@@ -141,3 +141,109 @@ output: [ 'Janne', 'hanne', 'Sanne', 'Lone', 'Gitte' ]
 [“Hans”, “Kurt”, … boys]
 output: [ 'Hans', 'Kurt', 'Peter', 'lars', 'Ole' ]
 ```
+
+### JS functions and callbacks
+
+**Functions** are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it from.
+
+A **callback function** is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+```JS
+// function declaration
+function addDecl(a, b) {
+  return a + b;
+}
+
+// function expression
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+// arrow function
+const addArrow = (a, b) => a + b;
+
+// anonymous function
+const createMultiplier = function (a) {
+  return (b) => a * b; // <= anonymous function
+};
+
+const double = createMultiplier(2);
+const triple = createMultiplier(3);
+console.log(double(4)); // 8
+console.log(triple(4)); // 12
+
+// IIFE (Immediately Invoked Function Expression)
+(function () {
+  console.log("I am a self invoked function!");
+})();
+```
+
+```JS
+// callback example
+function filter(numbers, callback) {
+  let results = [];
+  for (const number of numbers) {
+    if (callback(number)) {
+      results.push(number);
+    }
+  }
+  return results;
+}
+
+let numbers = [1, 2, 4, 7, 3, 5, 6];
+
+let oddNumbers = filter(numbers, function (number) {
+  return number % 2 != 0;
+});
+
+console.log(oddNumbers);
+```
+
+### Exercises
+
+1. Copy all three functions below in a js file and call one console.log at a time. It’s not about doing it as fast as you can, but about understanding what's happening, so make sure you understand each line.
+
+2. Write a `mul(n1, n2)` function (inspired by add and sub) and use it as the callback for the cb function.
+
+3. Call `cb()`, this time with an anonymous function that divides the first argument with the second.
+
+```JS
+// Function Declaration
+function add(n1, n2) {
+  return n1 + n2;
+}
+
+// Function Expression
+var sub = function (n1, n2) {
+  return n1 - n2;
+};
+
+// Callback example
+var cb = function (n1, n2, callback) {
+  return `Result from the two numbers: ${n1} and ${n2} = ${callback(n1, n2)}`;
+};
+
+// 1- What will this print?
+console.log(add(1, 2));
+
+// 2- What will it print and what does add represent?
+// console.log(add("hund"))
+
+// 3- What will it print
+// console.log(add(1,2,3));
+
+// 4- What will it print
+// console.log(add(1));
+
+// 5- What will it print
+// console.log(cb(3,3,add));
+
+// 6- What will it print
+// console.log(cb(4,3,sub));
+
+// 7- What will it print and what was the problem?
+// console.log(cb(3,3,add()));
+
+// 8- What will it print
+// console.log(cb(3,"hh",add));
+```

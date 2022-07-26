@@ -294,7 +294,7 @@ try {
 
 ### JavaScripts map(), filter(), forEach and reduce() functions.
 
-## Link
+### Links
 
 - [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
@@ -306,7 +306,7 @@ So make sure you know how they work. The reduce() function can be a little bit d
 
 JavaScript has also Maps, Set and Arrays. You are welcome to read more about in here on this [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections). There are pretty similar to Javas own collection, but we are not going to focus on those three this semester.
 
-## Exercises
+### Exercises
 
 ```JS
 var names = ["Lars", "Carla", "Jan", "Michelle", "Peter", "Bo", "Frederick"]

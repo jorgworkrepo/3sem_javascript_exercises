@@ -142,6 +142,8 @@ output: [ 'Janne', 'hanne', 'Sanne', 'Lone', 'Gitte' ]
 output: [ 'Hans', 'Kurt', 'Peter', 'lars', 'Ole' ]
 ```
 
+## 6)
+
 ### JS functions and callbacks
 
 **Functions** are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it from.
@@ -201,7 +203,7 @@ console.log(oddNumbers);
 
 ### Exercises
 
-1. Copy all three functions below in a js file and call one console.log at a time. It’s not about doing it as fast as you can, but about understanding what's happening, so make sure you understand each line.
+1. Copy the code below in a js file and call one console.log at a time. It’s not about doing it as fast as you can, but about understanding what's happening, so make sure you understand each line.
 
 2. Write a `mul(n1, n2)` function (inspired by add and sub) and use it as the callback for the cb function.
 
@@ -247,3 +249,112 @@ console.log(add(1, 2));
 // 8- What will it print
 // console.log(cb(3,"hh",add));
 ```
+
+## 7)
+
+### Error handling
+
+### Link
+
+- [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+
+```JS
+var cb = function (n1, n2, callback) {
+  return `Result from the two numbers: ${n1} and ${n2} = ${callback(n1, n2)}`;
+};
+
+console.log(cb(3, 3, add()));
+```
+
+The above function call will fail due to missing/wrong arguments. But it will fail at runtime, and not as with Java, at compile time. We can check arguments in JavaScript as sketched below and provide better errors by throwing our own exceptions:
+
+```JS
+// Will fail if n1 is undefined, or is not a number
+if(typeof n1 === "number") throw "Is not a number!"
+// Will fail if callback is undefined or is not a function
+if (typeof callback === "function") throw "Is not a function!"
+```
+
+</br>
+
+### Exercises
+
+1. Rewrite the Callback function expression (cb) to make a check for all its three required arguments, and throw an Error if any of the arguments do not match as explained here.
+2. Surround the call to the function with a try-catch block, and provide a more user-friendly error message if the function throws an error.
+
+```JS
+try {
+  // code
+} catch (e) {
+  console.log(e);
+}
+```
+
+## 8)
+
+### JavaScripts map(), filter(), forEach and reduce() functions.
+
+## Link
+
+- [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+- [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+Those four functions are essentially the most well-known JS functions to use on an array.
+So make sure you know how they work. The reduce() function can be a little bit difficult to understand at the beginning and hard to grasp , give it time. Nobody expect you to know everything in one day.
+
+JavaScript has also Maps, Set and Arrays. You are welcome to read more about in here on this [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections). There are pretty similar to Javas own collection, but we are not going to focus on those three this semester.
+
+## Exercises
+
+```JS
+var names = ["Lars", "Carla", "Jan", "Michelle", "Peter", "Bo", "Frederick"]
+```
+
+1. Click on the links above, and try to understand what each function does.
+2. Which of the functions are returning an new array and which do not?
+3. Use the JavaScript array above and ...
+
+   - use the filter method to create a new array with only names of length <=3.
+   - use the forEach method to iterate and print (console.log) both the original and the new array.
+
+4. Use the names-array, and using its map method, create a new array with all names upper-cased.
+
+5. Use the map and join functions, to create a new function, when given the name array, returns a HTML string with the names in an \<ul> tag as sketched below:
+
+```JS
+    <ul>
+      <li>Lars</li>
+      <li>Peter</li>
+      <li>Jan</li>
+      <li>Ian</li>
+    </ul>
+```
+
+The output above was shown with newlines for readability, but this is actually what we want (why):
+
+```JS
+<ul><li>Lars</li><li>Peter</li><li>Jan</li><li>Ian</li></ul>
+```
+
+6. Given this JavaScript array
+
+```JS
+    var cars = [
+        { id: 1, year: 1997, make: 'Ford', model: 'E350', price: 3000 },
+        { id: 2, year: 1999, make: 'Chevy', model: 'Venture', price: 4900 },
+        { id: 3, year: 2000, make: 'Chevy', model: 'Venture', price: 5000 },
+        { id: 4, year: 1996, make: 'Jeep', model: 'Grand Cherokee', price: 4799 },
+        { id: 5, year: 2005, make: 'Volvo', model: 'V70', price: 44799 }
+    ];
+```
+
+- Use the filter filter function to get arrays with only:
+  - Cars newer than 1999
+  - Al Volvo’s
+  - All cars with a price below 5000
+
+7. Use map and join function to implement a function, that, given the cars array used above, will create, and return a string with a valid SQL statement to insert the data into a table with matching column names (id, year, make, model, price) as sketched below:
+
+   `INSERT INTO cars (id,year,make,model,price) VALUES ( 1, 1997 'Ford''E350', 3000 );`

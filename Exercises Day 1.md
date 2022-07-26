@@ -14,7 +14,7 @@ Some of those exercises can seem very basic, but the idea is, to get you comfort
 
 ## 2)
 
-**JavaScript has a lot of embedded libraries, just like JAVA. Click on this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and have a look if you can recognize some of the functions you already used in JAVA. If you have done that, create four functions that can:**
+**JavaScript has a lot of embedded libraries, just like JAVA. Click on this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and have a look if you can recognize some of the functions you have already used in JAVA. If you have done that, create four `Math` functions that can:**
 
 1. print out a random number from 1 to 10.
 2. add 2 numbers and then show the result to the console.
@@ -49,11 +49,11 @@ Some of those exercises can seem very basic, but the idea is, to get you comfort
 
 ### Link
 
-- [JS Ternaty Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+- [JS Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 ### Exercise
 
-1. create a new variable called `age` and initials the variable with a number.
+1. create a new variable called `age` and initial the variable with a number.
 2. create a ternary operator that can print two statements to the console. In case `age` is more or equal then 18, it will print `I'm aloud to drive a car!`, but if the number is lower it will print `I'am to young to drive!`.
 
 ## 5)
@@ -110,7 +110,7 @@ var girls = ["Janne", "hanne", "Sanne"];
 
    - Hint: **sort()**
 
-10. The default sort algorithm doesn’t handle the situation where the name can be either capitalized or not. Write a user-defined sort method to fix this problem.
+10. The default sort algorithm doesn’t handle the situation where the name is either capitalized or not. Write a user-defined sort method to fix this problem.
 
 </br>
 

@@ -8,22 +8,17 @@ What you learn today:
 - String manipulations in JS
 - Arrays
 - JS functions and callbacks
-- Manipulation of JS arrays with JS functions
+- Manipulation of JS arrays with help of JS functions
 
 ## 1)
 
 **Find the answer below by browsing through the internet.**
 
-1. Which are the JavaScript Data Types? ( there are 6)
+1. Which are the JavaScript Data Types?
 2. What are undeclared and undefined variables?
-3. Which symbol is used for comments in Javascript? (single line, multi line)
+3. Which symbols are used for comments in Javascript? (single line, multi line)
 4. Does JavaScript support automatic type conversion?
 5. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
-6. What is the difference between a object oriented programming language and a functional programming language?
-7. What is the difference between imperative and declarative programming?
-8. Which imperative or declarative programming languages do you know?
-9. Explain what a pure-function and a higher-order-function is?
-10. Explain server-side vs client-side code.
 
 ## 2)
 

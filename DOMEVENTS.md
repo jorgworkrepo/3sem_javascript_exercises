@@ -8,7 +8,7 @@
 
 2. All div's should be given a color of your choice.
 
-   Hints: use **document.querySelectorAll("div").forEach(el)** to loop through each div element. (will return an array of Dom Nodes). Inside the forEach loop add an eventListener **el.addEventListener("click", (event)** and use **event.currentTarget.parentElement.style.color** to change the color of the div. That is one way to do it, maybe you be able to find a different solution.
+   Hints: use either **document.querySelectorAll("div").forEach(el)** to loop through each div element. (will return an array of Dom Nodes) or **document.getElementsByTagName("div")**
 
 3. Add a button to each div. Then create one click handler and assign it to all three buttons. Like this:
 
@@ -20,7 +20,7 @@
     ....
 ```
 
-When each individual button is clicked, the div next to it, should be given a new color.
+For each button that is clicked, the div next to it, should get a new color.
 
 </br>
 
@@ -29,7 +29,6 @@ When each individual button is clicked, the div next to it, should be given a ne
          alt ="div's"
          width ="150"
          height ="150">
-    <figcaption><em>JS form</em></figcaption>
 </figure>
 
 </br>
@@ -55,8 +54,7 @@ When each individual button is clicked, the div next to it, should be given a ne
 
 4. Adding an event handler to each div would be cumbersome and non-efficient (what if you had been asked to add 100 or thousands of new id’s). We will use JavaScripts event bubbling mechanism to solve this with only a single event handler. Add a new div with the **id="outer"** around all our div’s and assign a single click eventhandler (with the event argument) to this div.
 
-5. Implement code to write to the console:
-   - The value of id pointed to by the target property (which you get from the event argument)
+5. Implement some code that can printout the value of the id pointed to by the target property (which you get from the event argument).
 
 **Hint:**
 
@@ -64,11 +62,11 @@ When each individual button is clicked, the div next to it, should be given a ne
 function (e) { const target = e.target}
 ```
 
-6. Add an empty paragraph tag, with an id, to your HTML and change the code for both exercises above, so that output is not written to the console, but into this paragraph.
+1. Add an empty paragraph tag, with an id, to your HTML and change the code for both exercises above, so that output is not written to the console, but into this paragraph.
 
 **Hint:**
 
-Use the innerText property of an Element
+Use the **innerText** property of an Element
 
 ## 3)
 
@@ -89,7 +87,6 @@ Yesterday you used the array types map and join methods to create a \<ul>\</ul> 
          alt ="js form"
          width ="250"
          height ="250">
-    <figcaption><em>JS form</em></figcaption>
 </figure>
 
 </br>
@@ -132,7 +129,7 @@ Use this array, with map and filter as outlined in the following:
          alt ="cras table"
          width ="380"
          height ="250">
-    <figcaption><em>Cars Table</em></figcaption>
+    <!-- <figcaption><em>Cars Table</em></figcaption> -->
 </figure>
 
 </br>
@@ -149,7 +146,7 @@ Use this array, with map and filter as outlined in the following:
          alt ="filter cars"
          width ="380"
          height ="250">
-    <figcaption><em>Filter Cars Table</em></figcaption>
+    <!-- <figcaption><em>Filter Cars Table</em></figcaption> -->
 </figure>
 
 </br>
@@ -170,7 +167,7 @@ Implement a calculator with the functionality given below.
          alt ="calculator"
          width ="550"
          height ="250">
-    <figcaption><em>Calculator</em></figcaption>
+    <!-- <figcaption><em>Calculator</em></figcaption> -->
 </figure>
 
 </br>

@@ -70,7 +70,7 @@ Use the **innerText** property of an Element
 
 ## 3)
 
-## Using map to create list’s (ul’s, tables etc.)
+## Using map to create a list
 
 **Use carsTable.html for solving this exercise. It includes Bootstrap in the html header for html Table styling.**
 
@@ -91,22 +91,20 @@ Yesterday you used the array types map and join methods to create a \<ul>\</ul> 
 
 </br>
 
-1. Write the necessary code to add the new name to the array of names, and regenerate the \<ul> with the updated list.
+1. Write the necessary code to add a new name to the array of names, and regenerate the \<ul> with the updated list.
 
 **Hint:**
 
 You will probably see, very shortly that the name is added, the screen flickers and it's gone again.
 The problem is that it submits to the server, so the full page is reloaded.To prevent this you can call preventDefault() on the event argument which will prevent the default behavior (submit) and it should work.
 
-You can also use preventDefault() to prevent a link from actually forwarding to the link-address.
+You can also use **preventDefault()** to prevent a link from actually forwarding to the link-address.
 
-4. Add two more buttons to the form with the text: **“remove first”** and **“remove last”**. Implement the behavior inspired by how you solved part-b.
+1. Add two more buttons to the form with the text: **“remove first”** and **“remove last”**.
 
 ## 4)
 
 ## Using map and filter to create dynamic table-rows
-
-Yesterday you created a number of filter functions using the array given below.
 
 ```JS
     var cars = [
@@ -120,7 +118,7 @@ Yesterday you created a number of filter functions using the array given below.
 
 Use this array, with map and filter as outlined in the following:
 
-5. Use the map method to create a table with all data. Write a function which, given this array, will return an HTML string with the array formatted as a Table as sketched in this figure.
+1. Use the map method to create a table with all data. Write a function which, given this array, will return an HTML string with the array formatted as a Table as sketched in this figure.
 
 </br>
 
@@ -134,10 +132,7 @@ Use this array, with map and filter as outlined in the following:
 
 </br>
 
-6. Use the filter method, to filter out items from the list and add an input field and a button (provide each with an id), as sketched in this figure below. Write the necessary code so when the button is clicked, and the input field contains a number:
-
-- A new filtered array is created having only prices < than the value provided
-- This array is passed to the function implemented in the previous step, and the DOM is updated with this new table.
+1. Write a filter method, to filter out items from the list. Add an input field and a button (provide each with an id), as sketched in this figure below. Write the necessary code so when the button is clicked, the list changes accordantly.
 
 </br>
 

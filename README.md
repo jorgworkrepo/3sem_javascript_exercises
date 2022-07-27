@@ -86,7 +86,7 @@ The this keyword is not assigned a value until the function where it is defined 
 
 1. Call each method, one at a time, and try to understand the output.
 
-   - That is the window(browser) object. The window object is the default object in JavaScript.
+- That is the window(browser) object. The window object is the default object in JavaScript.
 
 ```JS
 console.log(this);

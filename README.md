@@ -150,21 +150,27 @@ output: [ 'Hans', 'Kurt', 'Peter', 'lars', 'Ole' ]
 
 A **callback function** is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
+### Link
+
+- [JS functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+**There are 5 different types of functions im JavaScript:**
+
 ```JS
-// function declaration
+// 1-function declaration
 function addDecl(a, b) {
   return a + b;
 }
 
-// function expression
+// 2-function expression
 const addExpr = function (a, b) {
   return a + b;
 };
 
-// arrow function
+// 3-arrow function
 const addArrow = (a, b) => a + b;
 
-// anonymous function
+// 4-anonymous function
 const createMultiplier = function (a) {
   return (b) => a * b; // <= anonymous function
 };
@@ -174,7 +180,7 @@ const triple = createMultiplier(3);
 console.log(double(4)); // 8
 console.log(triple(4)); // 12
 
-// IIFE (Immediately Invoked Function Expression)
+// 5-IIFE (Immediately Invoked Function Expression)
 (function () {
   console.log("I am a self invoked function!");
 })();
@@ -220,7 +226,7 @@ var sub = function (n1, n2) {
   return n1 - n2;
 };
 
-// Callback example
+// Function Expression with a callback
 var cb = function (n1, n2, callback) {
   return `Result from the two numbers: ${n1} and ${n2} = ${callback(n1, n2)}`;
 };
@@ -229,7 +235,7 @@ var cb = function (n1, n2, callback) {
 console.log(add(1, 2));
 
 // 2- What will it print and what does add represent?
-// console.log(add("hund"))
+// console.log(add("dog"))
 
 // 3- What will it print
 // console.log(add(1,2,3));
@@ -249,6 +255,36 @@ console.log(add(1, 2));
 // 8- What will it print
 // console.log(cb(3,"hh",add));
 ```
+
+## 8)
+
+### Asynchronous Callbacks
+
+Most of the javascript callbacks you will be using will be asynchronous, in contrary to map, filter and forEach which are synchronous (MAKE SURE you understand the difference).
+
+### Link
+
+- [Asynchronous](https://www.w3schools.com/js//js_asynchronous.asp)
+- [Synchronous vs Asynchronous](https://www.youtube.com/watch?v=Kpn2ajSa92c)
+
+```JS
+        var msgPrinter = function(msg,delay){
+        setTimeout(function(){
+            console.log(msg);
+        },delay);
+        };
+
+        console.log("aaaaaaaaaa");
+        msgPrinter ("bbbbbbbbbb",2000);
+        console.log("dddddddddd");
+        msgPrinter ("eeeeeeeeee",1000);
+        console.log("ffffffffff");
+```
+
+### Exercises
+
+1. Given the code above, answer, don’t execute the code, in what order you would expect to see the outputs.
+2. Add the code to a JavaScript file, execute and verify whether you answer to question 1. was right.
 
 ## 7)
 
@@ -332,7 +368,7 @@ var names = ["Lars", "Carla", "Jan", "Michelle", "Peter", "Bo", "Frederick"]
     </ul>
 ```
 
-The output above was shown with newlines for readability, but this is actually what we want (why):
+The output above was shown with newlines for readability, but this is actually what we want, why?:
 
 ```JS
 <ul><li>Lars</li><li>Peter</li><li>Jan</li><li>Ian</li></ul>
@@ -351,9 +387,9 @@ The output above was shown with newlines for readability, but this is actually w
 ```
 
 - Use the filter filter function to get arrays with only:
-  - Cars newer than 1999
-  - Al Volvo’s
-  - All cars with a price below 5000
+  - cars newer than 1999
+  - Volvo’s
+  - cars with a price below 5000
 
 7. Use map and join function to implement a function, that, given the cars array used above, will create, and return a string with a valid SQL statement to insert the data into a table with matching column names (id, year, make, model, price) as sketched below:
 

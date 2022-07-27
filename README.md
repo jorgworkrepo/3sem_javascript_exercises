@@ -2,6 +2,14 @@
 
 Some of those exercises can seem very basic, but the idea is, to get you comfortable using JavaScript syntax, before we dive into more challenging code assignments.
 
+What you learn today:
+
+- JS Math library
+- String manipulations in JS
+- Arrays
+- JS functions and callbacks
+- Manipulation of JS arrays with JS functions
+
 ## 1)
 
 **Find the answer below by browsing through the internet.**
@@ -53,19 +61,6 @@ Some of those exercises can seem very basic, but the idea is, to get you comfort
 7. split `cba` in three parts, so you end up with an array of length 3.
 
 ## 4)
-
-**The Conditional (Ternary) Operator**
-
-### Link
-
-- [JS Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-
-### Exercise
-
-1. create a new variable called `age` and initial the variable with a number. (eks. your age)
-2. create a ternary operator that can print two statements to the console. In case `age` is more or equal then 18, it should print `I'm aloud to drive a car!`, but if the number is lower, it will print `I'am to young to drive!`.
-
-## 5)
 
 **This exercise is meant to introduce you to the JavaScript array and the functionality it offers. Whenever you encounter a new language the very first thing you usually should focus on is its collection framework. All questions can be answered with one-liners, so the main task is to figure out which method to use (hints are given for each question).**
 
@@ -142,7 +137,7 @@ output: [ 'Janne', 'hanne', 'Sanne', 'Lone', 'Gitte' ]
 output: [ 'Hans', 'Kurt', 'Peter', 'lars', 'Ole' ]
 ```
 
-## 6)
+## 5)
 
 ### JS functions and callbacks
 
@@ -256,7 +251,7 @@ console.log(add(1, 2));
 // console.log(cb(3,"hh",add));
 ```
 
-## 8)
+## 6)
 
 ### Asynchronous Callbacks
 
@@ -287,46 +282,6 @@ Most of the javascript callbacks you will be using will be asynchronous, in cont
 2. Add the code to a JavaScript file, execute and verify whether you answer to question 1. was right.
 
 ## 7)
-
-### Error handling
-
-### Link
-
-- [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
-
-```JS
-var cb = function (n1, n2, callback) {
-  return `Result from the two numbers: ${n1} and ${n2} = ${callback(n1, n2)}`;
-};
-
-console.log(cb(3, 3, add()));
-```
-
-The above function call will fail due to missing/wrong arguments. But it will fail at runtime, and not as with Java, at compile time. We can check arguments in JavaScript as sketched below and provide better errors by throwing our own exceptions:
-
-```JS
-// Will fail if n1 is undefined, or is not a number
-if(typeof n1 === "number") throw "Is not a number!"
-// Will fail if callback is undefined or is not a function
-if (typeof callback === "function") throw "Is not a function!"
-```
-
-</br>
-
-### Exercises
-
-1. Rewrite the Callback function expression (cb) to make a check for all its three required arguments, and throw an Error if any of the arguments do not match as explained here.
-2. Surround the call to the function with a try-catch block, and provide a more user-friendly error message if the function throws an error.
-
-```JS
-try {
-  // code
-} catch (e) {
-  console.log(e);
-}
-```
-
-## 8)
 
 ### JavaScripts map(), filter(), forEach and reduce() functions.
 

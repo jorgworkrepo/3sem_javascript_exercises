@@ -2,7 +2,9 @@
 
 ## 1)
 
-## Simple DOM manipulation and Event handling
+### Simple DOM manipulation and Event handling
+
+### Exercises
 
 1. Add three div's to an HTML page, each with a unique id
 
@@ -35,7 +37,9 @@ For each button that is clicked, the div next to it, should get a new color.
 
 ## 2)
 
-## Event Bubbling and event arguments
+### Event Bubbling and event arguments
+
+### Exercises
 
 1. In a new HTML page add two div’s, each with a unique id. Style both id’s with this class:
 
@@ -70,7 +74,7 @@ Use the **innerText** property of an Element
 
 ## 3)
 
-## Using map to create a list
+### Using map to create a list
 
 **Use table.html for solving the next two exercises. It includes Bootstrap in the html header for html Table styling.**
 
@@ -78,11 +82,13 @@ Use the **innerText** property of an Element
 
 - [Html table](https://www.w3schools.com/html/html_tables.asp)
 
+### Exercises
+
 Yesterday you used the array types map and join methods to create a \<ul>\</ul> (unsorted list) with a number of names.
 
-1. Use this function+DOM manipulation to insert the \<ul>\</ul> somewhere in an HTML page.
+1. Use that function and DOM manipulation to insert the \<ul>\</ul> in an HTML page.
 
-2. Create a FORM with an input field plus a submit button as sketched here.
+2. Create a FORM with an input field and add a submit button as sketched here.
 
 </br>
 
@@ -108,7 +114,7 @@ You can also use **preventDefault()** to prevent a link from actually forwarding
 
 ## 4)
 
-## Using map and filter to create dynamic table-rows
+### Using map and filter to create dynamic table-rows
 
 ```JS
     var cars = [
@@ -121,6 +127,8 @@ You can also use **preventDefault()** to prevent a link from actually forwarding
 ```
 
 Use this array, with map and filter as outlined in the following:
+
+### Exercises
 
 1. Use the map method to create a table with all data. Write a function which, given this array, will return an HTML string with the array formatted as a Table as sketched in this figure.
 
@@ -155,6 +163,8 @@ Use this array, with map and filter as outlined in the following:
 ## Implement a simple calculator
 
 Implement a calculator with the functionality given below.
+
+### Exercises
 
 1. When a button is clicked the value should be appended to the display div (middle figure).
 2. When the equal sign is clicked, the result of the calculation must be presented. (last figure).

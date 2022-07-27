@@ -77,6 +77,8 @@ const variable = condition === true ? "do something if true" : "or do something 
 
 - []()
 
+## Examples
+
 ```JS
 class Object {
   constructor(name, address, phone) {
@@ -106,7 +108,24 @@ console.log(new Customer("Michelle", "Dronningsgade", "333-222-111"));
 console.log(obj);
 ```
 
+## Exercises
+
 1. Create an object with four different properties, with values, of your own choice (ex: name, birthday, hobby, email).
+2. Use a for-in loop (as sketched below) to demonstrate that we can iterate over the properties in an object.
+
+```JS
+  for(prop in myObj){
+    console.log(prop,myObj[prop]);
+  }
+```
+
+3. Use the delete keyword to demonstrate we can delete existing properties from an object (delete a property, and iterate over the properties again).
+
+4. Add a new property to your object to demonstrate that we can add new properties to existing objects.
+
+5. Create a Constructor function to create new Car having:
+   - a model, color and an .
+   - a method to get details about the Person
 
 ## 5)
 

@@ -25,7 +25,8 @@ You find the SVG code in the **index.html** file.
 
 3. Hook up an event handler on the map, get the id, perform an AJAX request to fetch the JSON-data from the link given above, and update the GUI using the JSON data to view the data as sketched above.
 
-Hints:
-Hook up a click-handler on the overall svg map (id=outer), and in that, find the id for the actual element that was clicked (country code) via the target property of the event handler.
-
 4. Change the color of the selected country by changing its fill property.
+
+Hint:
+
+Hook up a click-handler on the overall svg map (id=outer), and in that, find the id for the actual element that was clicked (country code) via the target property of the event handler.

@@ -24,6 +24,7 @@ Some of those exercises can seem very basic, but the idea is, to get you comfort
 ### Link
 
 - [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math){:target="\_blank"}
+- <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">Math</a></p>
 
 1. print out a random number from 1 to 10.
 2. add 2 numbers and then show the result to the console.

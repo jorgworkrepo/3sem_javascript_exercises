@@ -4,11 +4,35 @@
 
 ## Simple DOM manipulation and Event handling
 
-1. Add three div´s to an HTML page, each with a unique id
+1. Add three div's to an HTML page, each with a unique id
 
-2. When the page initially is loaded all div´s should be given a color of your choice. Hints: use document.querySelectorAll() (will return an array of Dom Nodes) and element.style.backgroundColor
+2. All div's should be given a color of your choice.
 
-3. Add a button, and assign a click handler to the button. When the button is clicked each div should be given a unique color. Hints: use document.querySelector(..) to get the individual div’s.
+   Hints: use **document.querySelectorAll("div").forEach(el)** to loop through each div element. (will return an array of Dom Nodes). Inside the forEach loop add an eventListener **el.addEventListener("click", (event)** and use **event.currentTarget.parentElement.style.color** to change the color of the div. That is one way to do it, maybe you be able to find a different solution.
+
+3. Add a button to each div. Then create one click handler and assign it to all three buttons. Like this:
+
+```JS
+    <div id="div1">
+      DIV 1
+      <button id="btn1" class="btn">Click me!</button>
+    </div>
+    ....
+```
+
+When each individual button is clicked, the div next to it, should be given a new color.
+
+</br>
+
+<figure>
+    <img src ="./images/divs.png"
+         alt ="div's"
+         width ="150"
+         height ="150">
+    <figcaption><em>JS form</em></figcaption>
+</figure>
+
+</br>
 
 ## 2)
 
@@ -58,6 +82,8 @@ Yesterday you used the array types map and join methods to create a \<ul>\</ul> 
 
 2. Create a FORM with an input field plus a submit button as sketched here.
 
+</br>
+
 <figure>
     <img src ="./images/form.png"
          alt ="js form"
@@ -66,7 +92,9 @@ Yesterday you used the array types map and join methods to create a \<ul>\</ul> 
     <figcaption><em>JS form</em></figcaption>
 </figure>
 
-3. Write the necessary code to add the new name to the array of names, and regenerate the \<ul> with the updated list.
+</br>
+
+1. Write the necessary code to add the new name to the array of names, and regenerate the \<ul> with the updated list.
 
 **Hint:**
 
@@ -97,6 +125,8 @@ Use this array, with map and filter as outlined in the following:
 
 5. Use the map method to create a table with all data. Write a function which, given this array, will return an HTML string with the array formatted as a Table as sketched in this figure.
 
+</br>
+
 <figure>
     <img src ="images/cararray.png"
          alt ="cras table"
@@ -105,10 +135,14 @@ Use this array, with map and filter as outlined in the following:
     <figcaption><em>Cars Table</em></figcaption>
 </figure>
 
+</br>
+
 6. Use the filter method, to filter out items from the list and add an input field and a button (provide each with an id), as sketched in this figure below. Write the necessary code so when the button is clicked, and the input field contains a number:
 
 - A new filtered array is created having only prices < than the value provided
 - This array is passed to the function implemented in the previous step, and the DOM is updated with this new table.
+
+</br>
 
 <figure>
     <img src ="images/filterCars.png"
@@ -117,6 +151,8 @@ Use this array, with map and filter as outlined in the following:
          height ="250">
     <figcaption><em>Filter Cars Table</em></figcaption>
 </figure>
+
+</br>
 
 ## 5)
 
@@ -127,6 +163,8 @@ Implement a calculator with the functionality given below.
 1. When a button is clicked the value should be appended to the display div (middle figure).
 2. When the equal sign is clicked, the result of the calculation must be presented. (last figure).
 
+</br>
+
 <figure>
     <img src ="images/calc.png"
          alt ="calculator"
@@ -134,6 +172,8 @@ Implement a calculator with the functionality given below.
          height ="250">
     <figcaption><em>Calculator</em></figcaption>
 </figure>
+
+</br>
 
 3. Go to calculator.html to get started:
 

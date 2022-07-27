@@ -72,7 +72,11 @@ Use the **innerText** property of an Element
 
 ## Using map to create a list
 
-**Use carsTable.html for solving this exercise. It includes Bootstrap in the html header for html Table styling.**
+**Use table.html for solving the next two exercises. It includes Bootstrap in the html header for html Table styling.**
+
+## Link
+
+- [Html table](https://www.w3schools.com/html/html_tables.asp)
 
 Yesterday you used the array types map and join methods to create a \<ul>\</ul> (unsorted list) with a number of names.
 

@@ -84,9 +84,9 @@ The this keyword is not assigned a value until the function where it is defined 
 
 </br>
 
-1.  Call each method, one at a time, and try to understand the output.
+1. Call each method, one at a time, and try to understand the output.
 
-    - That is the window(browser) object. The window object is the default object in JavaScript.
+   - That is the window(browser) object. The window object is the default object in JavaScript.
 
 ```JS
 console.log(this);
@@ -94,24 +94,24 @@ console.log(this);
 
     - In web browsers, the window object is also the global object. (you have to write this in your developer tools web browser console)
 
-    ```JS
-    console.log(this === window); // true
-    ```
+```JS
+console.log(this === window); // true
+```
 
     - this is a regular function call, so the this keyword still points to the window object.
 
-    ```JS
+```JS
     function calculateAge(year) {
       console.log(2022 - year)
       console.log(this)
     }
 
     calculateAge(1977); //output: 42 and window object
-    ```
+```
 
     - The this variable points to the object that is calling the method. The "john"object.
 
-    ```JS
+```JS
     var john =
     {
       name: 'John',
@@ -123,11 +123,11 @@ console.log(this);
     }
 
     john.calculateAge();//output: john object and 42
-    ```
+```
 
     - A object with a regular function call. And again, the this keyword in the innerFunction points to the global window object.
 
-    ```JS
+```JS
     var hans =
     {
       name: 'Hans',
@@ -146,4 +146,4 @@ console.log(this);
     }
 
     hans.calculateAge();// output: 42 and window object
-    ```
+```

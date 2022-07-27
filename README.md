@@ -73,12 +73,12 @@ const variable = condition === true ? "do something if true" : "or do something 
 
 ## The this keyword
 
-## this keyword
-
 **Regular function call:**
+
 The this keyword points at the global object, (the window object in the browser)
 
 **Method call:**
+
 The this variable points to the object that is calling the method.
 The this keyword is not assigned a value until the function where it is defined is actually called.
 
@@ -88,60 +88,62 @@ The this keyword is not assigned a value until the function where it is defined 
 
     - That is the window(browser) object. The window object is the default object in JavaScript.
 
-            ```JS
-            console.log(this);
-            ```
+```JS
+console.log(this);
+```
 
     - In web browsers, the window object is also the global object. (you have to write this in your developer tools web browser console)
 
-            ```JS
-            console.log(this === window); // true
-            ```
+    ```JS
+    console.log(this === window); // true
+    ```
 
     - this is a regular function call, so the this keyword still points to the window object.
 
-            ```JS
-            function calculateAge(year) {
-                console.log(2022 - year)
-                console.log(this)
-            }
+    ```JS
+    function calculateAge(year) {
+      console.log(2022 - year)
+      console.log(this)
+    }
 
-            calculateAge(1977); //output: 42 and window object
-            ```
+    calculateAge(1977); //output: 42 and window object
+    ```
 
     - The this variable points to the object that is calling the method. The "john"object.
 
-            ```JS
-            var john = {
-                name: 'John',
-                yearOfBirth: 1977,
-                calculateAge: function () {
-                    console.log(this);
-                    console.log(2019 - this.yearOfBirth);
-                }
-            }
+    ```JS
+    var john =
+    {
+      name: 'John',
+      yearOfBirth: 1977,
+      calculateAge: function () {
+      console.log(this);
+      console.log(2019 - this.yearOfBirth);
+        }
+    }
 
-            john.calculateAge();//output: john object and 42
-            ```
+    john.calculateAge();//output: john object and 42
+    ```
 
     - A object with a regular function call. And again, the this keyword in the innerFunction points to the global window object.
 
-            ```JS
-            var hans = {
-                name: 'Hans',
-                yearOfBirth: 1977,
-                calculateAge: function () {
-                    console.log(this);
-                    console.log(2019 - this.yearOfBirth);
+    ```JS
+    var hans =
+    {
+      name: 'Hans',
+      yearOfBirth: 1977,
+      calculateAge: function () {
+        console.log(this);
+        console.log(2019 - this.yearOfBirth);
 
-                    function innerFunction() {
-                        console.log(this + "hallo");
+        function innerFunction() {
+          console.log(this + "hallo");
 
-                    }
-                    innerFunction();
-                }
+        }
+        innerFunction();
+      }
 
-            }
+    }
 
-            hans.calculateAge();// output: 42 and window object
-            ```
+    hans.calculateAge();// output: 42 and window object
+    ```

@@ -9,3 +9,4 @@ Repo includes following branches
 - europemap
 - domevents
 - guessmynumber
+- deploying_single_page_applications

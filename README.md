@@ -8,3 +8,4 @@ Repo includes following branches
 - fetchdata
 - europemap
 - domevents
+- guessmynumber

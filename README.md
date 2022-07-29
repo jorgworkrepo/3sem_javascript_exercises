@@ -14,7 +14,7 @@
 
 ## 2)
 
-## Error handling
+### Error handling
 
 ### Link
 
@@ -54,9 +54,9 @@ try {
 
 ## 3)
 
-## The Conditional (Ternary) Operator
+### The Conditional (Ternary) Operator
 
-### Link
+### Links
 
 - [JS Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
@@ -71,11 +71,11 @@ const variable = condition === true ? "do something if true" : "or do something 
 
 ## 4)
 
-## JavaScript class and objects
+### JavaScript class and objects
 
-## Links
+### Links
 
-- []()
+- [JS Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ## Examples
 
@@ -129,7 +129,7 @@ console.log(obj);
 
 ## 5)
 
-## The this keyword
+### The this keyword
 
 **Regular function call:**
 
@@ -140,7 +140,7 @@ The this keyword points at the global object (see link below).
 The this variable points to the object that is calling the method.
 The this keyword is not assigned a value until the function where it is defined is actually called.
 
-## Links
+### Links
 
 - [Global object](https://javascript.info/global-object)
 - [JS this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)

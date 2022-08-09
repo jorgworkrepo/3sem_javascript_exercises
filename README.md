@@ -116,7 +116,7 @@ var girls = ["Janne", "hanne", "Sanne"];
 [ 'Janne', 'Ole', 'Peter', 'Sanne', 'hanne', 'lars' ]
 ```
 
-11. Make the entire array toUpperCase
+11. Using the original concatenated array, return an array with all names in uppercase "JANNE...."
 
 12. Using the original concatenated array, return an array only with names starting with 'L' or 'l'.
 

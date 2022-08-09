@@ -111,6 +111,15 @@ var girls = ["Janne", "hanne", "Sanne"];
 
 10. The default sort algorithm doesn’t handle the situation where the names are either capitalized or not. Write a user-defined sort method to fix this problem.
 
+```JS
+// hanne should be at the start of the array !
+[ 'Janne', 'Ole', 'Peter', 'Sanne', 'hanne', 'lars' ]
+```
+
+11. Make the entire array toUpperCase
+
+12. Using the original concatenated array, return an array only with names starting with 'L' or 'l'.
+
 </br>
 
 ### Alternative to concat()

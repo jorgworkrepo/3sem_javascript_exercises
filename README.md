@@ -80,15 +80,42 @@ const variable = condition === true ? "do something if true" : "or do something 
 ## Examples
 
 ```JS
+
 class Object {
-  constructor(name, address, phone) {
-    this.name = name;
-    this.address = address;
-    this.phone = phone;
+  constructor(fName, lName, address, yearOfBirth, phoneNumbers = Map()) {
+    this._fName = fName;
+    this._lName = lName;
+    this._address = address;
+    this._yearOfBirth = yearOfBirth;
+    this._phoneNumbers = phoneNumbers;
+
+    this.calculateAge = function () {
+      return new Date().getFullYear() - this._yearOfBirth;
+    };
+  }
+
+  get getFullName() {
+    return `${this._fName} ${this._lName}`;
+  }
+
+  get fName() {
+    return this._fName;
+  }
+
+  set fName(newName) {
+    this._fName = newName;
+  }
+
+  get lName() {
+    return this._lName;
+  }
+
+  set lName(newName) {
+    this._lName = newName;
   }
 }
 
-// the old fashion way
+// the old fashion JS way
 function Customer(name, address, phone) {
   this.name = name;
   this.address = address;
@@ -97,15 +124,30 @@ function Customer(name, address, phone) {
 
 // or
 
-const obj = {
+const myObj = {
   name: "var1",
   address: "var2",
   phone: "var3",
 };
 
-console.log(new Object("Hans", "Kongensgade", "111-222-333"));
-console.log(new Customer("Michelle", "Dronningsgade", "333-222-111"));
-console.log(obj);
+const michelle = new Customer("Michelle", "Dronningsgade", "333-222-111");
+
+const steve = new Object("Steve", "Hansen", "Kingsroad 21", 1977, [
+  ["Private", "111-222-333"],
+  ["Mobile", "0478951423"],
+]);
+
+
+console.log(michelle);
+console.log(myObj);
+
+console.log(steve.getFullName);
+console.log(steve._address);
+steve.fName = "Karl";
+console.log(steve.fName);
+console.log(steve.calculateAge());
+console.log(steve);
+
 ```
 
 ## Exercises
@@ -114,18 +156,19 @@ console.log(obj);
 2. Use a for-in loop (as sketched below) to demonstrate that we can iterate over the properties in an object.
 
 ```JS
-  for(prop in myObj){
-    console.log(prop,myObj[prop]);
-  }
+for (prop in yourObj) {
+  console.log(prop, yourObj[prop]);
+}
 ```
 
 3. Use the delete keyword to demonstrate we can delete existing properties from an object (delete a property, and iterate over the properties again).
 
 4. Add a new property to your object to demonstrate that we can add new properties to existing objects.
 
-5. Create a Constructor function to create new Car having:
-   - a model, color and an .
-   - a method to get details about the Person
+5. Create a Constructor function to create a Car having:
+   - a model, color and yearOfConstruction
+   - add method to calculate the age of the car
+   - add setters and getters
 
 ## 5)
 

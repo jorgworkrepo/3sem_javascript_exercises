@@ -10,3 +10,4 @@ Repo includes following branches
 - domevents
 - guessmynumber
 - deploying_single_page_applications
+- startcode_exercise_2

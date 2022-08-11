@@ -18,7 +18,7 @@
 - Now open the project in your favorite IDE (with vs code just (in the terminal) type code .)
 - Back in the terminal type 
    ```JS 
-   npm run dev // (Vite App)
+   npm run dev
    ```
 - Now arrange your windows so you can see both your editor window (with the code) and the browser with the simple menu.
 - Keep your windows arranged like this for the rest of the exercise.

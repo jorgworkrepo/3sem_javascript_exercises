@@ -2,7 +2,7 @@
 
 Start with cloning the project
 
-`git clone -b europemap https://github.com/CPH-Business-Academy/3sem_javascript_exercises.git
+`git clone -b europemap https://github.com/CPH-Business-Academy/3sem_javascript_exercises.git` 
 
 In this exercise, we will combine SVG with several of the topics we have been around this semester such as AJAX and REST-endpoints to obtain data, and Javascript for DOM-manipulation.
 

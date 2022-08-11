@@ -16,7 +16,7 @@
 - Type npm run build (yes before deployment this project has to be built)
 - Take a quick look inside the generated build folder, and look no further in this folder for the rest of the exercise
 - Now open the project in your favorite IDE (with vs code just (in the terminal) type code .)
-- Back in the terminal type npm start(React App) or npm run dev (Vite App)
+- Back in the terminal type ```JS npm run dev // (Vite App)``
 - Now arrange your windows so you can see both your editor window (with the code) and the browser with the simple menu.
 - Keep your windows arranged like this for the rest of the exercise.
 
@@ -24,7 +24,7 @@
 
    Take a look inside `index.html` in the public folder, and locate the part marked for exercise-1. Here you should see an ul-tag with id=jokes.
 
-   In `index.js`, get all jokes from the `jokeFacade` and create, using the arrays map-method, list-items for all jokes and place them in ul.
+   In `main.js`, get all jokes from the `jokeFacade` and create, using the arrays map-method, list-items for all jokes and place them in ul.
 
    **Hint:** The video referred to above shows how to do that.
 

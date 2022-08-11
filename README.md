@@ -1,5 +1,9 @@
 ## Europe map exercise
 
+Start with cloning the project
+
+`git clone -b europemap https://github.com/CPH-Business-Academy/3sem_javascript_exercises.git
+
 In this exercise, we will combine SVG with several of the topics we have been around this semester such as AJAX and REST-endpoints to obtain data, and Javascript for DOM-manipulation.
 
 The task is to create a web-page with a map of Europe which, when a country is selected with a mouse click, should highlight the country and print details about the country as sketched below.

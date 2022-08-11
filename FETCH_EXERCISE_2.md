@@ -45,14 +45,6 @@
 
 Your task is to fetch random Chuck Norris jokes and show them like this:
 
- <figure>
-    <img src ="../images/chucky.png"
-         alt ="chuck norris jokes"
-         width =""
-         height ="">
-    <figcaption><em>Chuck Norris Jokes</em></figcaption>
-</figure>
-
 1. Locate the section in index.html reserved for exercise-2 and add a button + an empty p-tag (which will hold the quote we fetch), both with id’s so they are easy to “find”
 2. Add an event listener to the button’s click event and pass a callback that will update the p-tag in the index.html with a new quote fetched from the API given below
 3. Initially, fetch the quote from a remote API: https://api.chucknorris.io/jokes/random

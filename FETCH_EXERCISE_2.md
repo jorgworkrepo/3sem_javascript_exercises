@@ -29,13 +29,12 @@
 
    In `main.js`, get all jokes from the `jokeFacade` and create, using the arrays map-method, list-items for all jokes and place them in ul.
 
-   **Hint:** The video referred to above shows how to do that.
 
 4. **Finding individual jokes**
 
-   In the `index.html` file, below the ul-tag we used above, add an input field, a button with the text get joke, and a p-tag to hold the joke you want to find.
+   In the `index.html` file, below the ul-tag we used above, add an input field, a button with the text `GET JOKE` , and a p-tag to hold the joke you want    to find.
 
-   Investigate the start code and implement functionality (in index.js) to find a joke, given it’s id.
+   Investigate the start code and implement functionality (in main.js) to find a joke, given it’s id.
 
 5. **Adding new Jokes**
    In the `index.html` file, below what you did in the previous step, add the necessary changes to add new jokes to the internal joke-facade.

@@ -10,13 +10,13 @@
 
 2. **[Watch this video before the exercise!](https://www.youtube.com/watch?v=Kc0a43cY-tk)**
 
-- This exercise assumes you have installed nodejs, and a JavaScript editor like vs-code
+- This exercise assumes you have installed nodejs, and a JavaScript editor like vs-code or webstorm.
 - Clone the project referred to above, and navigate into the project root folder:
 - In this folder type npm install to fetch all dependencies (as had it been a Maven project)
 - Type npm run build (yes before deployment this project has to be built)
 - Take a quick look inside the generated build folder, and look no further in this folder for the rest of the exercise
 - Now open the project in your favorite IDE (with vs code just (in the terminal) type code .)
-- Back in the terminal type npm start.
+- Back in the terminal type npm start(React App) or npm run dev (Vite App)
 - Now arrange your windows so you can see both your editor window (with the code) and the browser with the simple menu.
 - Keep your windows arranged like this for the rest of the exercise.
 

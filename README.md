@@ -45,9 +45,9 @@ What you learn today:
 ### Exercises
 
 1. create three string variables.
-   1. `var cph = Copenhagen`
-   2. `var bis = Business`
-   3. `var aca = Academy`
+   1. `let cph = Copenhagen`
+   2. `let bis = Business`
+   3. `let aca = Academy`
 2. concatenate those variables into a new variable called `cba`, using JS String template literals. `Hint: You have to use backticks`.
 3. make `cba` to upper case
 4. make `cba` to lower case

@@ -37,7 +37,7 @@ if(typeof n1 === "number") throw "Is not a number!"
 if (typeof callback === "function") throw "Is not a function!"
 ```
 
-</br>
+
 
 ### Exercises
 
@@ -189,7 +189,7 @@ The this keyword is not assigned a value until the function where it is defined 
 - [JS this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 - [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
 
-</br>
+
 
 1. Call each method, one at a time, and try to understand the output.
 

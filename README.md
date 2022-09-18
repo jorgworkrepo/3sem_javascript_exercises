@@ -17,14 +17,13 @@ height="150"
 
 </br>
 
-In this document, we will introduce two different ways to host your SPA and its backend.
+In this document, we will introduce you to host your SPA and its backend.
 
-1. The static files will be hosted on a free cloud platform surge.sh which will let you deploy a static front-end in just a minute or two. The backend (Nginx, Tomcat, MySQL will be hosted as usual on a DigitalOcean Droplet, but without ANY frontend code
-2. The static files will be hosted on your existing droplet by Nginx, not Tomcat, and the backend by Tomcat, as usual.
+-  The static files will be hosted on your existing droplet by Nginx, not Tomcat, and the backend by Tomcat, as usual.
 
 </br>
 
-Both strategies will require Tomcat and probably a database, so let's first prepare the backend project for deployment
+The strategiy will require Tomcat and probably a database, so let's first prepare the backend project for deployment
 
 ## Backend
 

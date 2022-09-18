@@ -2,9 +2,7 @@
 
 1. **clone the repo from GitHub**
 
-```JS
-   git clone -b startcode_exercise_2 https://github.com/CPH-Business-Academy/3sem_javascript_exercises.git
-```
+[Git Project](https://github.com/CPH-Business-Academy/simpleViteJSApplication)
 
 ## ES6 classes and Single Page Applications - No fetch()
 

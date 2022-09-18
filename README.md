@@ -65,14 +65,14 @@ What you learn today:
 
 ### Exercises
 
-</br>
+
 
 ```JS
 var boys = ["Peter", "lars", "Ole"];
 var girls = ["Janne", "hanne", "Sanne"];
 ```
 
-</br>
+
 
 1. Create a new array called **all**, which should be a concatenation of the two arrays given above, starting with the boys and ending with the girls. To do this use a method called concat() to merge two or more arrays together. (alternative is shown below by using the spread operator)
 
@@ -120,7 +120,7 @@ var girls = ["Janne", "hanne", "Sanne"];
 
 12. Using the original concatenated array, return an array only with names starting with 'L' or 'l'.
 
-</br>
+
 
 ### Alternative to concat()
 

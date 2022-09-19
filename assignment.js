@@ -9,8 +9,8 @@ const filterFunction = (data) => {
     });
 }
 
-
-// Assignment 2:
+//Assignment 2:
 const aboveAverageFunction = (data) => {
-
+    // TODO
 }
+

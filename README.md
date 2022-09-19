@@ -63,7 +63,7 @@ For each button that is clicked, the div next to it, should get a new color.
 **Hint:**
 
 ```JS
-function (e) { const target = e.target}
+function (e) { const id = e.target.id}
 ```
 
 1. Add an empty paragraph tag, with an id, to your HTML and change the code for both exercises above, so that output is not written to the console, but into this paragraph.

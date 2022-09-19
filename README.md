@@ -2,16 +2,6 @@
 
 ## 1)
 
-**Answer the following questions:**
-
-- Explain about the Object Model, and why it’s (very) relevant for modern Web-development
-- Explain (using an example of your own choice) about JavaScript events, and Event Bubbling
-- Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.
-- Explain the topic AJAX and how it has changed the way modern web-applications are created
-- Explain the Same Origin Policy (for AJAX), and different ways to work around it
-
-## 2)
-
 ### Simple DOM manipulation and Event handling
 
 ### Exercises
@@ -45,7 +35,7 @@ For each button that is clicked, the div next to it, should get a new color.
 
 </br>
 
-## 3)
+## 2)
 
 ### Event Bubbling and event arguments
 
@@ -82,7 +72,7 @@ function (e) { const target = e.target}
 
 Use the **innerText** property of an Element
 
-## 4)
+## 3)
 
 ### Using map to create a list
 
@@ -122,7 +112,7 @@ You can also use **preventDefault()** to prevent a link from actually forwarding
 
 1. Add two more buttons to the form with the text: **“remove first”** and **“remove last”**.
 
-## 5)
+## 4)
 
 ### Using map and filter to create dynamic table-rows
 
@@ -168,7 +158,7 @@ Use this array, with map and filter as outlined in the following:
 
 </br>
 
-## 6)
+## 5)
 
 ## Implement a simple calculator
 

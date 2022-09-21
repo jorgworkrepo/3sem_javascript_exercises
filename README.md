@@ -9,6 +9,6 @@ You should also try to implement a score and a high-score.
 Start by doing the following:
 
 1. open the index.html file with help of VS extension Live Server "Go Live"
-2. implement the game in script.js file
+2. implement the game in solution.js file
 
 Have fun 🤟🤟🤟🤟🤟

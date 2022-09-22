@@ -31,7 +31,7 @@ This requires a backend setup as explained in our other guides. For the first st
 
 ## How to set the CORS headers in your Java backend
 
-One thing you will have to do if you host your backend and frontend on different servers (Green Strategy in the following) is to set up CORS. You can set the required headers for each individual REST-endpoint, but for a large REST-API that would be cumbersome.
+One thing you will have to do if you host your backend and frontend on different servers (NginX and Tomcat with each their portnumber) is to set up CORS. You can set the required headers for each individual REST-endpoint, but for a large REST-API that would be cumbersome.
 
 JAX-RS provides a concept Filters which can be used when you want to modify any request or response parameters like the headers.
 In our case, we can use it to set the required CORS headers on all requests.

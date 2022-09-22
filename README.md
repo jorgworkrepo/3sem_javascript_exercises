@@ -109,7 +109,7 @@ Several such mock-backends exist, with json-server as one of the most popular. I
 
     with following headers:
 
-        Content-Type : application/json
+        Content-Type: application/json
         Accept: application/json
 
     Set the body as the user returned from your first POST request, but change the name to something else.
